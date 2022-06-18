@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator JS di Prompt dan Alert</title>
+    </head>
+    <body>
+        <H2>Kalkulator Sederhana Muter di Prompt</H2>
+        <!-- <input type="button" value=" + " onclick="alert(tambah())"> -->
+        
+    <script>
+        var angka1 = parseInt(prompt("Masukkan Angka Pertama",""));
+        var optr = prompt("Pilih operator matematika (+ - * /)!");
+        var angka2 = parseInt(prompt("Masukkan Angka Kedua",""));
+        
+        if (optr=="+"){
+            window.alert("Hasilnya adalah "+ (angka1+angka2));
+        }else if (optr=="-"){
+            window.alert("Hasilnya adalah "+(angka1-angka2));
+        }else if (optr=="*"){
+            window.alert("Hasilnya adalah "+(angka1*angka2));
+        }else if (optr=="/"){
+            window.alert("Hasilnya adalah "+(angka1/angka2));
+        }else {
+            window.alert("Operator Tidak Ada Bray!!!");
+        }
+       
+    </script>
+    </body>
+</html>
